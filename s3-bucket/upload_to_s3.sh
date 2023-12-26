@@ -16,12 +16,13 @@ if ! aws s3api head-bucket --bucket "$S3_BUCKET_NAME" 2>/dev/null; then
   # Create bucket in the specified region
   if ! aws s3api create-bucket \
   --bucket "$S3_BUCKET_NAME" \
-  --region "$AWS_DEFAULT_REGION"; then
+  --region "$AWS_DEFAULT_REGION" \
+  --create-bucket-configuration LocationConstraint="$AWS_DEFAULT_REGION"; then
   echo "Failed to create bucket '$S3_BUCKET_NAME'. Please check your permissions or try a different name/region."
   exit 1
 fi
   
-  echo "Bucket '$S3_BUCKET_NAME' created successfully."
-  echo "Waiting for 1-2 minutes before uploading files..."
-  sleep 120  # Wait for 2 minutes (120 seconds)
+#  echo "Bucket '$S3_BUCKET_NAME' created successfully."
+#  echo "Waiting for 1-2 minutes before uploading files..."
+#  sleep 120  # Wait for 2 minutes (120 seconds)
 fi
