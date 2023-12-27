@@ -15,5 +15,16 @@ Some key features of AWS Glue include;
 After creating an S3 Bucket, and storing my dataset in the bucket, I intend to;
 
 - Create a new crawler and specify the data stored in my S3 bucket.
-- Create a target database and create an IAM Role for the service which will have permissions to access my Crawler targets and my S3 bucket. Although I do not intend to grant it full S3 Access. 
+- [x] Create a target database
+- Create an IAM Role for the service which will have permissions to access my Crawler targets and my S3 bucket. Although I do not intend to grant it full S3 Access. 
 - Run the crawler to create a data catalog that organizes metadata from the dataset.
+
+
+**my_profile, endpoint, and database_name** are variables holding the values for --profile, --endpoint, and the database name, respectively.
+
+- I had to create a new profile,Why?
+Having multiple AWS profiles allows you to manage different access permissions, work in different AWS regions, It is like having different outfits for different activities
+
+```aws
+aws configure --profile my_new_profile
+```
