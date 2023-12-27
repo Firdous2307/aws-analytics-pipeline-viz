@@ -1,0 +1,19 @@
+## AWS Glue
+
+AWS Glue is an Amazon service that helps you organize and process your data easily. It sorts and prepares your data for analysis and other tasks without you having to manage complex setups. It is also a serverless service.
+
+Some key features of AWS Glue include;
+1. **Data Catalog**: It maintains a central index of your data, making it easy to find and understand datasets without hunting through different locations.
+
+2. **ETL Simplification**: Helps in Extracting, Transforming, and Loading (ETL) data from different sources into formats suitable for analysis or storage.
+
+3. **Crawlers**: Glue uses crawlers to automatically discover the schema and metadata of your data sources. Crawlers can scan data stores, infer the schema, and populate the Glue Data Catalog with metadata.
+
+[For more information on AWS Glue](https://aws.amazon.com/glue/)
+
+
+After creating an S3 Bucket, and storing my dataset in the bucket, I intend to;
+
+- Create a new crawler and specify the data stored in my S3 bucket.
+- Create a target database and create an IAM Role for the service which will have permissions to access my Crawler targets and my S3 bucket. Although I do not intend to grant it full S3 Access. 
+- Run the crawler to create a data catalog that organizes metadata from the dataset.
