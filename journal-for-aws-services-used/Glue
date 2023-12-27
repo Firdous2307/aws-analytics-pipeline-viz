@@ -33,9 +33,15 @@ I have to create an IAM Role for AWS Glue and attach polcies to access my S3 Buc
 
 So I already created my role via the Console and attached the Glue Service, now to attach the plocy for my S3 Bucket.
 
-```sh
-aws iam put-role-policy \
-    --role-name AWSGlueRole-demo \
-    --policy-name S3AccessPolicy \
-    --policy-document file://aws/policies/s3-access-policy.json
-```
+
+# Create Policy first
+aws iam create-policy \
+--policy-name <POLICY_NAME> \
+--policy-document file://aws/policies/s3-access-policy.json
+
+## Attach the Policy
+aws iam attach-role-policy \
+--role-name <ROLE_NAME> \
+--policy-arn <POLICY_ARN>
+
+
