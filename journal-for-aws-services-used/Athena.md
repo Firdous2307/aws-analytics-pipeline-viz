@@ -14,7 +14,7 @@ AWS Athena is an interactive query service provided by Amazon Web Services (AWS)
 
 [Sample Query SQL File](https://github.com/Firdous2307/aws-analytics-pipeline-viz/blob/main/aws-athena/sample_query.sql)
 
- It's starting an AWS Athena query execution by referencing an SQL file located at `aws-athena/athena_query.sql`. The result of this query execution will be stored in the specified S3 bucket (`s3://firdous-data-analytics-bucket/`). 
+ It's starting an AWS Athena query execution by referencing an SQL file located at `aws-athena/sample_query.sql`. The result of this query execution will be stored in the specified S3 bucket (`s3://firdous-data-analytics-bucket/`). 
 
 
 [Script for AWS Athena](https://github.com/Firdous2307/aws-analytics-pipeline-viz/blob/main/aws-athena/script.sh)
