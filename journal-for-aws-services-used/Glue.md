@@ -22,7 +22,7 @@ After creating an S3 Bucket, and storing my dataset in the bucket, I intend to;
 - [x] Create a new crawler and specify the data stored in my S3 bucket.
 - [x] Create a target database
 - [x] Create an IAM Role for the service which will have permissions to access my Crawler targets and my S3 bucket. Although I do not intend to grant it full S3 Access. 
-- Run the crawler to create a data catalog that organizes metadata from the dataset.
+- [x] Run the crawler to create a data catalog that organizes metadata from the dataset.
 
 
 
