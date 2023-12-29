@@ -6,9 +6,9 @@ aws glue create-crawler \
     --description "Crawler for my dataset" \
     --targets "S3Targets=[{Path='firdous-data-analytics-bucket/'}]"
 
-# Sleep for 1-2 minutes (choose the appropriate duration)
-echo "Waiting for 1-2 minutes before starting the crawler..."
-sleep 120  # 120 seconds = 2 minutes
+# Sleep for 15 seconds (choose your appropriate duration)
+echo "Waiting for 15 seconds before starting the crawler..."
+sleep 15 
 
 # Start the Glue Crawler
 aws glue start-crawler --name MyCrawler
