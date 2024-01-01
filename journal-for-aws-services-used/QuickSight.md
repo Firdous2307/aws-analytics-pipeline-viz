@@ -40,4 +40,3 @@ Amazon QuickSight stands as a powerful business intelligence (BI) and data visua
 
 #### Official Documentation :books:
 - [Amazon QuickSight Documentation](https://docs.aws.amazon.com/quicksight/index.html): Detailed guides, tutorials, and references for QuickSight usage.
-
