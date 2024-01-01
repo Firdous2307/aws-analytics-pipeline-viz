@@ -1,5 +1,10 @@
-# AWS-Analytics-Pipeline-Vizualization
-For this project, I would like to use AWS Services for data processing and vizualization.
+# AWS-Analytics-Pipeline-Visualization
+
+
+For this project, I would like to use AWS Services for data processing and visualization.
+
+
+ ![DIAGRAM](https://github.com/Firdous2307/aws-analytics-pipeline-viz/assets/124298708/2b5a6501-698a-4b46-829b-03ea838eb30b)
 
 ## Features
 
