@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+# Database name to be created in AWS Glue
+database_name="$database_name"
+
+
+# AWS CLI profile name configured with necessary permissions
+my_profile="$my_profile"
+
+# AWS Glue endpoint where the database will be created
+endpoint="$endpoint"
+
+# AWS CLI command to create a Glue database
+aws glue create-database \
+    --database-input "{\"Name\":\"$database_name\"}" \
+    --profile "$my_profile" \
+    --endpoint "$endpoint"

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+# Initiating AWS Athena query execution to retrieve all data from a specific table
+aws athena start-query-execution \
+    --query-string "SELECT * FROM \"$database_name\".\"firdous_data_analytics_bucket\" LIMIT 10" \
+    --result-configuration "OutputLocation=$output_location" \
+    --query-execution-context Database="$database_name",Catalog="AwsDataCatalog"
+
+# Initiating AWS Athena query execution using an SQL file
+aws athena start-query-execution \
+    --query-string "file://sample_query.sql" \
+    --result-configuration "OutputLocation=$output_location"
