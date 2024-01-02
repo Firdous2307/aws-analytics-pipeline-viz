@@ -40,3 +40,8 @@ Amazon QuickSight stands as a powerful business intelligence (BI) and data visua
 
 #### Official Documentation :books:
 - [Amazon QuickSight Documentation](https://docs.aws.amazon.com/quicksight/index.html): Detailed guides, tutorials, and references for QuickSight usage.
+
+
+
+i created a data source via aws cli but i can not see it in my quicksight console
+I dont know why but i will be debugging this and using other datasets as references
