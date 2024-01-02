@@ -43,10 +43,7 @@ Amazon QuickSight stands as a powerful business intelligence (BI) and data visua
 
 
 
-i created a data source via aws cli but i can not see it in my quicksight console
-I dont know why but i will be debugging this and using other datasets as references
-
-So, I am trying to create an S3 data source and use it as a reference, i have my manifest.json file stored in my S3 Bucket and ran the command to create an S3 data source.
+## DataSets
+Datasets in Amazon QuickSight are the backbone of data analysis, representing connected data sources.Through datasets, QuickSight users perform data preparation, transformation, and define metadata that influences visualizations.
 
 
-I might just use the console to create this, Let's see how that goes
