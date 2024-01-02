@@ -1,0 +1,16 @@
+
+{
+    "fileLocations": [
+        {
+            "URIs": [
+                "s3://firdous-data-analytics-bucket/2023-12-26/Amazon Sales Dataset.csv"
+            ]
+        }
+    ],
+    "globalUploadSettings": {
+        "format": "CSV",
+        "delimiter": ",",
+        "textqualifier": "\"",
+        "containsHeader": "true"
+    }
+ }
